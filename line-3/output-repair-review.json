@@ -1,7 +1,7 @@
 {
-  "repair": "Restore required named output from the existing finished step-29 wall; no new round or artwork.",
-  "output": "artifacts/line-3/wall-v11.png",
-  "source": "artifacts/line-3/wall-v10.png",
+  "repair": "Restore the required wall-v12.png output from the existing finished step-29 wall; no new round or artwork.",
+  "output": "artifacts/line-3/wall-v12.png",
+  "source": "artifacts/line-3/wall-v11.png",
   "sha256": "cf31ce389bd0bcdadef74582c4dcde69740e23e92ee8eb519c7eaeeaf6e59aaa",
   "dimensions": [
     1254,
@@ -12,11 +12,11 @@
   "png_crc_and_decompression": "passed",
   "record_29_hash_matches": true,
   "canonical_wall_byte_identical": true,
-  "visual_review": "Existing finished wall inspected: cave framing, rock, ancestral Pepes and lower balance preserved byte for byte. Visible main hand has five digits; no added hands, letters or numbers observed.",
+  "visual_review": "Finished wall inspected. Cave size, rock, cracks, lighting, framing and all ancestral marks preserved byte for byte. Pepe has a wide mouth and heavy-lidded eyes. Visible main hand has five digits. No new text or hands.",
   "unmet_visual_requirements": [],
   "limitations": [
     "Inherited photographic rock texture remains unchanged.",
-    "Visual inspection is by the implementing worker."
+    "Visual review is by the implementing worker."
   ],
   "goal_and_existing_records": "unchanged"
 }
