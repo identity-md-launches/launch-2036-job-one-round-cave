@@ -1,0 +1,9 @@
+# The Bound Tokens
+
+The new mark is two worn ochre tokens joined by a charcoal cord above Pepe: keeping a callable identity attached to its operation. Built-in imagegen edited the inherited line 4 wall. A narrow mask transferred just the new pigment area; all 11,464 changed pixels are inside that area and zero pixels outside it changed. Earlier art and both five-digit hands remain untouched. No new hands or writing were added.
+
+Final wall: `artifacts/line-4/wall-v12.png`, also `artifacts/line-4/wall.png`: 1254 × 1254 RGB PNG. Preview: `artifacts/line-4/31.jpg`, hard-linked beside record `dist/line-4/31.json` as `31.jpg`: 512 × 512 JPEG, 87,454 bytes. Full wall and preview were visually inspected. The inherited photographic rock texture is retained to preserve the wall; this limitation is recorded in `review-31.json` with dimensions and preservation evidence.
+
+Final edit prompt (built-in image editor): “Edit target: the inherited square prehistoric cave wall. Add ONLY a small worn yellow ochre motif of two uneven clay tokens joined by a short charcoal cord on the bare rock at upper center, above Pepe's head (around x 570 y 310 in original 1254 square). Each token has a simple charcoal dot. Represent stable identity binding. Keep every existing mark, Pepe figure, rock, cracks, warm torchlight, colors, framing and square dimensions unchanged. Do not remove, move or redraw any ancestor mark. Earth pigments only, rough handmade cave art, bare stone through worn pigment. No additional hands, no letters, no numbers, no writing, no border, logo or watermark. Existing Pepe hands each retain five digits. Save resulting actual PNG for project output.”
+
+The installed Replicate generator first returned `ERROR: Error: empty Replicate output item`, with no image. The built-in image editor then succeeded. No discarded image is retained in the workspace.

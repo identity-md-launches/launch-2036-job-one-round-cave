@@ -1,0 +1,23 @@
+{
+  "ancestor_sha256": "24a4311257f7cf73bb295281486d492713580eee7800a795e446825e46f9da19",
+  "generated_edit_sha256": "c7356fda0b0a1937943691cbffbf8b2e8f4519fad5769b4b8cba5ed6cc5e1708",
+  "sha256": "7d32ec220e3297f7f26e8450e047db6fd8dc6c06c0bded5a34cb4b98ff7e7577",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "RGB PNG",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "JPEG",
+  "jpeg_bytes": 87454,
+  "changed_pixels": 11464,
+  "pixels_changed_outside_addition": 0,
+  "visual_review": "Two ochre tokens joined by a charcoal cord above Pepe. Existing marks and two five-digit hands preserved; no new hands, text or numbers.",
+  "unmet_visual_requirements": [
+    "Inherited photographic rock texture retained to preserve the wall."
+  ],
+  "method": "Built-in image editor followed by restricted token/cord mask on ancestral pixels."
+}

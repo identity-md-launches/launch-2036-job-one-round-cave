@@ -1,0 +1,136 @@
+{
+  "suites": [
+    {
+      "tool": "apidelta",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "............................................\n----------------------------------------------------------------------\nRan 44 tests in 0.458s\n\nOK\n"
+    },
+    {
+      "tool": "boundcheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.309s\n\nOK\n"
+    },
+    {
+      "tool": "multiplecheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 1.845s\n\nOK\n"
+    },
+    {
+      "tool": "constcheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.329s\n\nOK\n"
+    },
+    {
+      "tool": "uniquecheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.426s\n\nOK\n"
+    },
+    {
+      "tool": "dependcheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 1.551s\n\nOK\n"
+    },
+    {
+      "tool": "authcheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 12.075s\n\nOK\n"
+    },
+    {
+      "tool": "schemecheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.534s\n\nOK\n"
+    },
+    {
+      "tool": "oauthcheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.353s\n\nOK\n"
+    },
+    {
+      "tool": "servercheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.506s\n\nOK\n"
+    },
+    {
+      "tool": "idcheck",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.416s\n\nOK\n"
+    }
+  ],
+  "demo": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "breaking",
+    "counts": {
+      "breaking": 1,
+      "review": 1,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [
+      {
+        "severity": "review",
+        "code": "operation_metadata_changed",
+        "location": "/paths/~1openapi.json/get",
+        "message": "Operation identifier, extension or other metadata changed."
+      },
+      {
+        "severity": "breaking",
+        "code": "operation_id_changed",
+        "location": "/paths/~1openapi.json/get/operationId",
+        "message": "An existing operationId was removed or changed. Clients generated using it may lose their callable symbol even if the HTTP endpoint still works."
+      }
+    ],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "idcheck-v1 (includes servercheck and all earlier line 4 analyzers)",
+    "identifier_scope": "inline top-level paths operations; callbacks and webhooks excluded",
+    "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+    "baseline_source": "https://api.imd.fun/openapi.json",
+    "demo": "One identifier renamed hypothetically in the saved public description; no endpoint contacted."
+  },
+  "unchanged_capture": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "no_detected_breakage",
+    "counts": {
+      "breaking": 0,
+      "review": 0,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "idcheck-v1 (includes servercheck and all earlier line 4 analyzers)",
+    "identifier_scope": "inline top-level paths operations; callbacks and webhooks excluded"
+  },
+  "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+  "live": {
+    "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+    "matches_capture": true,
+    "comparison": {
+      "schema": "apidelta-report-v1",
+      "perspective": "existing clients upgrading to the new description",
+      "status": "no_detected_breakage",
+      "counts": {
+        "breaking": 0,
+        "review": 0,
+        "info": 0
+      },
+      "operations_compared": 5,
+      "findings": [],
+      "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+      "extension": "idcheck-v1 (includes servercheck and all earlier line 4 analyzers)",
+      "identifier_scope": "inline top-level paths operations; callbacks and webhooks excluded"
+    }
+  }
+}
