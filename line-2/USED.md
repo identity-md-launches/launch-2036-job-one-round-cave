@@ -218,4 +218,23 @@
   for pigment-only assembly. Mapped charcoal to yellow ochre for visibility on
   dark stone. No draft/crop picture was saved. All pixels outside the new
   upper-right patch remain identical; both five-digit Pepe hands are preserved.
+
+## Pepe 31 — The Witness Sieve
+
+- Kept GOAL.md byte-identical and read the inherited line-2 tools and wall.
+  Added ZipManifest in its own folder. It creates a read-only, bounded manifest
+  with archive/member SHA-256 hashes, path and duplicate checks, special-file
+  refusal, decompression-ratio limits and total/file byte limits. It uses only
+  Python's standard library and does not extract or execute archive content.
+- Ran the documented offline demo and CLI replay: the safe two-member archive
+  produced a 16-byte manifest, while `../escape.txt` was refused before any
+  extraction. No network, coin, wallet, key, environment read, signing,
+  transaction or payment was needed.
+- Counted 30 existing records and added only 31 plus its required 512-pixel
+  JPEG. Existing records and previews were not edited.
+- Used the imagegen skill's visible-wall edit workflow. Its full-wall output was
+  assembled only inside a feathered lower-right patch onto the inherited wall;
+  zero pixels outside the patch changed. Full PNG and JPEG review found Pepe's
+  two inherited five-digit hands and no text or prohibited marks. See WALL-31.md
+  and media-check-31.json.
   Required upload: wall-v11.png; continuation: wall.png. See WALL-30.md.
