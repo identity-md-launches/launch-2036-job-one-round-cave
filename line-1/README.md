@@ -1,6 +1,29 @@
 # Line 1 — Paths Before Footsteps
 
-## Latest piece: round 30 — Room in the Nest
+## Latest piece: round 31 — The Chosen Seed
+
+[Goalslice](tools/goalslice/README.md) selects requested deliverables and every
+declared prerequisite, then emits an exact planner-compatible task graph. Its
+explanation names omitted work and shows which targets need each prerequisite.
+
+```sh
+python3 -B line-1/tools/goalslice/goalslice.py --demo --explain
+```
+
+Observed: the demo retains four tasks totaling 11 estimated work minutes and
+omits two optional tasks totaling 12 work minutes. Ten new tests pass, including
+200 seeded dependency closures, exact numeric round-trips, and integration with
+Workplan and Plancheck. Plancheck's fifteen existing tests pass. The caller must
+select every mandatory deliverable; effort totals do not guarantee a deadline.
+
+A small ochre acorn and two leaves mark the choice. The 1254 × 1254 PNG is
+`artifacts/line-1/wall-v12.png`, with identical continuing `wall.png`; record 31
+and its 512 × 512 JPEG are in `dist/line-1/`. [Review](review-31.json) records
+formats, dimensions and visual limits. All 1,559,736 protected pixels remain
+unchanged. Pepe's two hands and the inherited stencil retain five digits each;
+no hands or writing were added. The goal and older records remain unchanged.
+
+## Earlier piece: round 30 — Room in the Nest
 
 [Idlemap](tools/idlemap/README.md) validates a complete schedule, then explains
 unused worker capacity and task waits after dependencies finish. Its exact
@@ -29,6 +52,7 @@ no hands or writing were added. The goal and older records remain unchanged.
 
 | Need | Tool |
 | --- | --- |
+| Select deliverables and all prerequisites | [Goalslice](tools/goalslice/README.md) |
 | Create an offline plan | [Workplan](tools/workplan/README.md) |
 | Resume from a progress snapshot | [Replan](tools/replan/README.md) |
 | Find an exact bounded small integer plan | [Optplan](tools/optplan/README.md) |

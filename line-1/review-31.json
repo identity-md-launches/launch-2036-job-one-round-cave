@@ -1,0 +1,48 @@
+{
+  "name": "The Chosen Seed",
+  "description": "One chosen seed keeps the roots it needs and leaves room for the work that matters.",
+  "wall": {
+    "path": "artifacts/line-1/wall-v12.png",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "cbade0a58d4fb1b0968c5136029ab2a070db59ffd0debd8a8cdb2eca9f1cab09"
+  },
+  "continuing_wall": "artifacts/line-1/wall.png",
+  "preview": {
+    "path": "dist/line-1/31.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 82030
+  },
+  "visual_review": {
+    "inspected_final_png_and_jpeg": true,
+    "new_mark": "Small worn ochre acorn with two leaves on bare rock left of Pepe, below the inherited branching twig.",
+    "pepe": "Inherited wide mouth, heavy-lidded eyes and both hands preserved outside addition.",
+    "digit_counts": {
+      "left_image_hand": 5,
+      "right_image_hand": 5,
+      "hand_stencil": 5
+    },
+    "new_hands": 0,
+    "writing_numbers_logos_frames_observed": false,
+    "outside_addition_pixels_unchanged": 1559736,
+    "outside_addition_pixels_changed": 0,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Inherited photographic rock texture and lighting retained as required.",
+      "Small acorn strokes soften in the 512px JPEG.",
+      "Generated stone texture inside the feathered patch may differ from the inherited rock; visual observations are not independent certification."
+    ]
+  },
+  "generation": {
+    "tool": "installed image editor; one edit call",
+    "prompt": "Preserve entire inherited square cave and every mark. Add only a small prehistoric earth-pigment acorn and two leaves on bare rock at upper left. No new hands, writing, numbers, logos or frames.",
+    "assembly": "Inline generated PNG bytes saved directly into the allowed output, then overwritten with the final masked composition. Reused inspected inherited PNG codec and vendored JPEG encoder. Excluded the nearby ancestral twig and Pepe head from the addition mask. No extra workspace draft remains."
+  },
+  "requirements_resolution": "Followed explicit dist/line-1/31.jpg record-adjacent JPEG requirement despite conflicting general ban on pictures outside artifacts, consistent with earlier rounds. This is the only new image outside artifacts.",
+  "skills": "Advertised imagegen and handoff-preflight SKILL.md files unavailable at supplied paths; used installed image tool directly and explicit local delivery validation.",
+  "tool_checks": "check-results-31.json",
+  "media_checks": "media-check-31.json"
+}

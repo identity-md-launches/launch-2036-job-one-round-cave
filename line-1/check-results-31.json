@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "command": "python3 -B line-1/tools/goalslice/selftest.py",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 1.166s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-1/tools/plancheck/selftest.py",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "test_bad_graphs (__main__.Checks.test_bad_graphs) ... ok\ntest_bad_values_and_progress (__main__.Checks.test_bad_values_and_progress) ... ok\ntest_cli (__main__.Checks.test_cli) ... ok\ntest_coverage (__main__.Checks.test_coverage) ... ok\ntest_deadline_and_untrusted_claims (__main__.Checks.test_deadline_and_untrusted_claims) ... ok\ntest_demo (__main__.Checks.test_demo) ... ok\ntest_dependency (__main__.Checks.test_dependency) ... ok\ntest_durations_and_intervals (__main__.Checks.test_durations_and_intervals) ... ok\ntest_exact_decimal (__main__.Checks.test_exact_decimal) ... ok\ntest_existing_planners (__main__.Checks.test_existing_planners) ... ok\ntest_idle_is_valid (__main__.Checks.test_idle_is_valid) ... ok\ntest_nested_worker_overlaps (__main__.Checks.test_nested_worker_overlaps) ... ok\ntest_read_boundary (__main__.Checks.test_read_boundary) ... ok\ntest_valid_and_immutable (__main__.Checks.test_valid_and_immutable) ... ok\ntest_worker_and_units (__main__.Checks.test_worker_and_units) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.657s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-1/tools/goalslice/goalslice.py --demo --explain",
+      "exit": 0,
+      "stdout": "{\n  \"targets\": [\n    \"deliver\"\n  ],\n  \"tasks\": [\n    {\n      \"id\": \"brief\",\n      \"minutes\": \"2\",\n      \"after\": []\n    },\n    {\n      \"id\": \"build\",\n      \"minutes\": \"5\",\n      \"after\": [\n        \"brief\"\n      ]\n    },\n    {\n      \"id\": \"deliver\",\n      \"minutes\": \"1\",\n      \"after\": [\n        \"test\"\n      ]\n    },\n    {\n      \"id\": \"test\",\n      \"minutes\": \"3\",\n      \"after\": [\n        \"build\"\n      ]\n    }\n  ],\n  \"required_by\": {\n    \"brief\": [\n      \"deliver\"\n    ],\n    \"build\": [\n      \"deliver\"\n    ],\n    \"deliver\": [\n      \"deliver\"\n    ],\n    \"test\": [\n      \"deliver\"\n    ]\n  },\n  \"omitted\": [\n    \"optional-chart\",\n    \"optional-polish\"\n  ],\n  \"retained_effort_minutes\": \"11\",\n  \"omitted_effort_minutes\": \"12\",\n  \"scope\": \"Caller-selected deliverables and declared prerequisites only; effort is not elapsed time or a deadline guarantee; no task execution.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 -B line-1/tools/goalslice/goalslice.py --tasks line-1/tools/plancheck/tasks.json --target b",
+      "exit": 0,
+      "stdout": "{\"tasks\": [\n  {\"id\": \"a\", \"minutes\": 3, \"after\": []},\n  {\"id\": \"b\", \"minutes\": 2, \"after\": [\"a\"]}\n]}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node - (independent pixel comparison)",
+      "source": "const fs=require('node:fs');\nconst {decode}=require('./line-1/media/finish-wall.cjs');\nconst a=decode(fs.readFileSync('artifacts/line-1/wall-v11.png'));\nconst b=decode(fs.readFileSync('artifacts/line-1/wall-v12.png'));\nlet protectedCount=0, changed=0, outside=0;\nfor(let y=0;y<1254;y++)for(let x=0;x<1254;x++){\n const inside=x>212&&x<333&&y>329&&y<448&&!(x>=310&&y<=367)&&!(x>=310&&y>=426);\n const i=(y*1254+x)*3;\n const differs=!a.pixels.subarray(i,i+3).equals(b.pixels.subarray(i,i+3));\n if(!inside){protectedCount++;if(differs)outside++;}\n if(differs)changed++;\n}\nif(outside||changed<1000||protectedCount!==1559736)throw Error('preservation failed');\nconsole.log(JSON.stringify({protected_pixels:protectedCount,changed_pixels:changed,outside_mask_changed_pixels:outside}));\n",
+      "exit": 0,
+      "stdout": "{\"protected_pixels\":1559736,\"changed_pixels\":12774,\"outside_mask_changed_pixels\":0}\n",
+      "stderr": ""
+    }
+  ],
+  "interpretation": "10 new Goalslice tests and 15 unchanged Plancheck tests pass; includes 200 seeded closure cases and Workplan/Plancheck integration. No task labels executed."
+}

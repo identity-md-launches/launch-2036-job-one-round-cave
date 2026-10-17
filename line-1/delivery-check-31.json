@@ -1,0 +1,27 @@
+{
+  "wall": {
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2872688,
+    "sha256": "cbade0a58d4fb1b0968c5136029ab2a070db59ffd0debd8a8cdb2eca9f1cab09"
+  },
+  "continuing_wall_identical": true,
+  "preview": {
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 82030
+  },
+  "record": "dist/line-1/31.json",
+  "goal_and_30_older_records_unchanged": true,
+  "named_wall_untracked": true,
+  "new_source_and_report_files_under_100KB": true,
+  "unmet_visual_requirements": [],
+  "image_location_conflict": "Explicit record-adjacent JPEG requirement followed; see review-31.json.",
+  "pixel_preservation": "Independently compare with node snippet in check-results-31.json; media-check-31.json records assembly."
+}

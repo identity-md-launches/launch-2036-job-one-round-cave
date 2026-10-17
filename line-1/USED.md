@@ -253,3 +253,31 @@
   predecessor rounds, despite the general image-location clause. No draft
   image remains in the workspace. The named PNG remains untracked for daemon
   upload; no file was force-added.
+
+# Used in round 31
+
+- Preserved GOAL.md and all 30 previous JSON records. Read gathering/REPORT.md;
+  no broken supported Line 1 tool was reported. Added Goalslice to keep only
+  caller-selected deliverables and their full prerequisite closure before planning.
+- Read and reused unchanged Plancheck validation, exact numeric parsing and
+  bounded workspace-local file input. Read Workplan before integration testing.
+  Python standard library only, with the existing sibling Plancheck as its sole
+  runtime source dependency. Ten new tests and fifteen Plancheck tests pass;
+  includes 200 seeded fixed-point closure comparisons and exact numeric extremes.
+  No task label, network call, coin, price, pool, wallet, key, environment read,
+  payment, signing or posting is needed for this offline capability.
+- Used inherited wall-v11.png, SHA-256
+  b659648b1180446dde298beb37af93e909f6f8bce1e699db33f6fe72ca2b0fcc,
+  as the installed image editor reference. Advertised skill files were unavailable
+  at their supplied paths. Saved inline image bytes without reading the tool's
+  external image storage. Read and reused inherited PNG/JPEG media code.
+- Retained only the acorn and leaves in a feathered bare-rock patch, excluding
+  the ancestral twig and Pepe's head. All 1,559,736 protected pixels remain
+  identical. Inspected finished PNG and JPEG; both Pepe hands and the stencil
+  each have five digits. Added no hands, writing, numbers, frame or logo.
+- Saved wall-v12.png and identical continuing wall.png, new record 31 and its
+  512px JPEG. Followed explicit dist/line-1/31.jpg despite the conflicting general
+  image-location clause, as prior rounds did; it is the only new picture outside
+  artifacts and below 100 KB. No workspace image draft remains. Named outputs
+  remain untracked for daemon upload; none was force-added. Review and check
+  files record dimensions, format, preservation, limitations and observed checks.
